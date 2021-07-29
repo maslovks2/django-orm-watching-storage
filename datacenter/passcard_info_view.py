@@ -11,7 +11,7 @@ def passcard_info_view(request, passcode):
     this_passcard_visits = [
         {
             "entered_at": localtime(visit.entered_at),
-            "duration": Visit.format_duration(visit.get_duration().total_seconds()),
+            "duration": Visit.format_duration(visit.get_duration()),
             "is_strange": visit.is_long()
         }
         for visit in Visit.objects.filter(passcard__passcode=passcode)

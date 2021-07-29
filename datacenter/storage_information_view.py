@@ -12,7 +12,7 @@ def storage_information_view(request):
         non_closed_visits.append(
             {
                 "who_entered": visit.passcard.owner_name,
-                "entered_at": localtime(visit.entered_at, timezone=timezone('Europe/Moscow')),
+                "entered_at": localtime(visit.entered_at, timezone=timezone("Europe/Moscow")),
                 "duration": Visit.format_duration(duration_in_seconds)
             }
         )
@@ -20,4 +20,4 @@ def storage_information_view(request):
     context = {
         "non_closed_visits": non_closed_visits,  # не закрытые посещения
     }
-    return render(request, 'storage_information.html', context)
+    return render(request, "storage_information.html", context)

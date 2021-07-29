@@ -7,7 +7,6 @@ from django.utils.timezone import localtime
 def passcard_info_view(request, passcode):
     passcard = Passcard.objects.all()[0]
     passcard = Passcard.objects.get(passcode=passcode)
-    # Программируем здесь
 
     this_passcard_visits = [
         {

@@ -6,8 +6,6 @@ from pytz import timezone
 
 
 def storage_information_view(request):
-    # Программируем здесь
-
     non_closed_visits = []
     for visit in Visit.objects.filter(leaved_at__isnull=True):
         duration_in_seconds = visit.get_duration().total_seconds()

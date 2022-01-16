@@ -27,6 +27,7 @@
     source .venv/bin/activate
 ```
 
+
 #### Для Windows
 ```bash
     venv\Scripts\activate.bat

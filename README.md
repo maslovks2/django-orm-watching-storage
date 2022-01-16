@@ -39,7 +39,7 @@
 
 ### 4. Запуск приложения в активированном окружениии
 ```bash
-    python main.py
+    python manage.py runserver
 ```
 ---
 ## Установка через poetry
@@ -50,6 +50,6 @@
 ```
 ### 2. Запуск через виртуальное окружение *poetry*
 ```bash
-    poetry run python main.py
+    poetry run python manage.py runserver
 ```
 

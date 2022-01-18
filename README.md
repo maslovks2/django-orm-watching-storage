@@ -54,3 +54,14 @@
     poetry run python manage.py runserver
 ```
 
+## Переменные окружения
+
+Для корректной работы нужно определить следующие переменные окружения 
+
+[SECRET_KEY](https://docs.djangoproject.com/en/2.2/ref/settings/#secret-key)
+
+[DB_URL](https://docs.sqlalchemy.org/en/13/core/engines.html#database-urls)
+
+[DEBUG](https://docs.djangoproject.com/en/2.2/ref/settings/#debug)
+
+

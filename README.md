@@ -64,4 +64,4 @@
 
 [DEBUG](https://docs.djangoproject.com/en/2.2/ref/settings/#debug)
 
-
+[ALLOWED_HOSTS](https://docs.djangoproject.com/en/2.2/ref/settings/#ALLOWED_HOSTS)

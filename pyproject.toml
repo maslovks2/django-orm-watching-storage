@@ -16,5 +16,6 @@ django = [
 psycopg2-binary = "2.8.*"
 python-dotenv = {version = "0.19.*", python = ">=3.6"}
 python = ">= 3.6.0 <3.8.0"
-environs = "^9.4.0"
+environs = "9.4.*"
+dj-database-url = "0.5.*"
 [tool.poetry.dev-dependencies]
